@@ -106,7 +106,7 @@
     margin-bottom: 50px;
 }
 
-.feature-item {
+.cert-feature-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,11 +119,11 @@
     transition: transform 0.3s ease;
 }
 
-.feature-item:hover {
+.cert-feature-item:hover {
     transform: translateY(-5px);
 }
 
-.feature-icon {
+.cert-feature-icon {
     flex-shrink: 0;
     width: 70px;
     height: 70px;
@@ -135,14 +135,14 @@
     justify-content: center;
 }
 
-.feature-content h3 {
+.cert-feature-content h3 {
     font-size: 1.3rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 10px;
 }
 
-.feature-content p {
+.cert-feature-content p {
     color: #666;
     line-height: 1.6;
     margin: 0;
@@ -183,7 +183,7 @@
 }
 
 /* Certificate Modal */
-.certificate-modal {
+.cert-modal {
     display: none;
     position: fixed;
     z-index: 10000;
@@ -195,7 +195,7 @@
     animation: fadeIn 0.3s ease;
 }
 
-.modal-content {
+.cert-modal-content {
     position: relative;
     margin: 2% auto;
     padding: 0;
@@ -207,7 +207,7 @@
     align-items: center;
 }
 
-.modal-close {
+.cert-modal-close {
     position: absolute;
     top: -50px;
     right: 0;
@@ -221,7 +221,7 @@
     z-index: 10001;
 }
 
-.modal-close:hover {
+.cert-modal-close:hover {
     color: #007bff;
 }
 
@@ -300,22 +300,22 @@
         gap: 25px;
     }
     
-    .feature-item {
+    .cert-feature-item {
         padding: 25px 20px;
     }
-    
-    .feature-icon {
+
+    .cert-feature-icon {
         width: 60px;
         height: 60px;
         margin-bottom: 10px;
     }
-    
-    .modal-content {
+
+    .cert-modal-content {
         width: 95%;
         margin: 5% auto;
     }
-    
-    .modal-close {
+
+    .cert-modal-close {
         top: -40px;
         right: 10px;
     }
@@ -330,11 +330,11 @@
         height: 250px;
     }
     
-    .feature-item {
+    .cert-feature-item {
         padding: 20px 15px;
     }
-    
-    .feature-content h3 {
+
+    .cert-feature-content h3 {
         font-size: 1.2rem;
     }
     

@@ -1,16 +1,16 @@
 /* References Page Styles */
-.references-gallery {
+.ref-gallery {
     padding: 100px 0;
     background: #f8f9fa;
 }
 
-.gallery-container {
+.ref-gallery-container {
     width: 100vw;
     margin: 0;
     padding: 0;
 }
 
-.gallery-grid {
+.ref-gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -21,7 +21,7 @@
     padding: 0 20px;
 }
 
-.gallery-item {
+.ref-gallery-item {
     position: relative;
     overflow: hidden;
     border-radius: 0;
@@ -30,12 +30,12 @@
     background: transparent;
 }
 
-.gallery-item:hover {
+.ref-gallery-item:hover {
     transform: none;
     box-shadow: none;
 }
 
-.gallery-image {
+.ref-gallery-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -43,7 +43,7 @@
     border-radius: 0;
 }
 
-.gallery-item:hover .gallery-image {
+.ref-gallery-item:hover .ref-gallery-image {
     transform: none;
 }
 
@@ -82,17 +82,17 @@
 
 
 
-.stats-section {
+.ref-stats-section {
     padding: 100px 0px;
 }
 
-.stats-container {
+.ref-stats-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.stats-grid {
+.ref-stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
@@ -100,7 +100,7 @@
 }
 
 /* Stats section styling */
-.stats-section .stat-item {
+.ref-stats-section .ref-stat-item {
     background: white;
     padding: 30px 20px 30px 20px;
     border-radius: 15px;
@@ -108,12 +108,12 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.stats-section .stat-item:hover {
+.ref-stats-section .ref-stat-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
-.stat-number-large {
+.ref-stat-number {
     display: block;
     font-size: 3rem;
     font-weight: 800;
@@ -121,7 +121,7 @@
     margin-bottom: 10px;
 }
 
-.stat-label-large {
+.ref-stat-label {
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -131,66 +131,66 @@
 
 /* References Responsive */
 @media (max-width: 768px) {
-    .references-gallery {
+    .ref-gallery {
         padding: 60px 0;
     }
-    
-    .gallery-grid {
+
+    .ref-gallery-grid {
         grid-template-columns: 1fr;
         gap: 5px;
         padding: 0;
         width: 95%;
         margin: 0 auto;
     }
-    
-    .gallery-item {
+
+    .ref-gallery-item {
         width: 100%;
         max-width: 100%;
         margin: 0;
     }
-    
-    .gallery-image {
+
+    .ref-gallery-image {
         height: 200px;
         width: 100%;
     }
-    
-    .gallery-content {
+
+    .ref-gallery-content {
         padding: 20px;
     }
-    
-    .references-stats {
+
+    .ref-stats-section {
         padding: 40px 0;
     }
-    
-    .stats-grid {
+
+    .ref-stats-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
     }
-    
-    .stat-card {
+
+    .ref-stat-card {
         padding: 25px 15px;
     }
-    
-    .stat-number-large {
+
+    .ref-stat-number {
         font-size: 2.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    .gallery-grid {
+    .ref-gallery-grid {
         grid-template-columns: 1fr;
     }
-    
-    .stats-grid {
+
+    .ref-stats-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
-    .stat-number-large {
+
+    .ref-stat-number {
         font-size: 2rem;
     }
-    
-    .stat-label-large {
+
+    .ref-stat-label {
         font-size: 0.9rem;
     }
 }
