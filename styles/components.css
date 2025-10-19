@@ -1,0 +1,541 @@
+
+/* Reviews Section */
+.reviews-section {
+    padding: 150px 0 100px 0;
+    background: #f8f9fa;
+}
+
+.hero:not(.hero-main) ~ .reviews-section .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.hero:not(.hero-main) ~ .reviews-section .reviews-header,
+.hero:not(.hero-main) ~ .reviews-section .reviews-grid {
+    margin: 0 10%;
+    width: 80%;
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reviews-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.reviews-title[data-text]::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    line-height: 0.8;
+    margin-top: -20px;
+}
+
+.reviews-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.review-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.review-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.rating-score {
+    font-weight: 700;
+    color: #007bff;
+    font-size: 1.1rem;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.review-text {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.review-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.author-name {
+    font-weight: 600;
+    color: #333;
+}
+
+.author-location {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* About Section */
+.about {
+    padding: 60px 0 40px 0;
+    background: white;
+}
+
+.about-content {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-label {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.about-title[data-text]::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    line-height: 0.8;
+    margin-top: -20px;
+}
+
+.about-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-text-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Home page about section - match hero content width */
+.hero-main + .about .about-text-section {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+}
+
+/* Home page about section layout */
+.about-container-home {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Home page about title styling */
+.hero-main + .about .about-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+/* Zeleny dom page title styling */
+.zeleny-dom-text .about-title {
+    font-size: 3.36rem;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1;
+}
+
+.zeleny-dom-text .about-header {
+    margin-bottom: 30px;
+}
+
+/* Zeleny dom container override */
+.zeleny-dom-container .about-content {
+    max-width: 90% !important;
+    width: 90% !important;
+    margin: 0 5% !important;
+    padding: 0 !important;
+}
+
+.about-content-home {
+    width: 100%;
+    padding: 0;
+}
+
+.about-section-home {
+    width: 100%;
+}
+
+.about-flex-layout {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.about-text-column {
+    flex: 2;
+}
+
+.about-image-column {
+    flex: 1;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.stat-item-left {
+    text-align: left;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007bff;
+    display: block;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.about-btn-home {
+    margin-top: 20px;
+}
+
+/* Center button on sluzby page */
+.hero:not(.hero-main) + .about .about-btn {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 30px auto 0 auto;
+    line-height: 1;
+}
+
+.about-single-photo {
+    position: sticky;
+    top: 100px;
+}
+
+.about-image-home {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Zeleny dom page styles */
+.zeleny-dom-layout {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.zeleny-dom-text {
+    flex: 1;
+}
+
+.zeleny-dom-image-column {
+    flex: 1;
+}
+
+.zeleny-dom-sticky {
+    position: sticky;
+    top: 100px;
+}
+
+.zeleny-dom-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.zeleny-dom-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.zeleny-dom-btn {
+    margin-top: 30px;
+    text-align: left;
+    line-height: 1 !important;
+    display: flex !important;
+    justify-content: flex-start;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+/* Sluzby page services grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.service-item {
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.service-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.service-item h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.service-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+    min-width: 120px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007bff;
+    line-height: 1;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.about-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: 2px solid #333;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.about-btn:hover {
+    background: #333;
+    color: white;
+}
+
+.about-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.about-btn:hover svg {
+    transform: translate(5px, -5px);
+}
+
+
+/* Responsive Components */
+@media (max-width: 768px) {
+    .about, .reviews-section {
+        padding: 80px 0 60px 0;
+    }
+    
+    .about-title, .reviews-title {
+        font-size: 1.5rem;
+    }
+
+    .about-title[data-text]::before,
+    .reviews-title[data-text]::before {
+        font-size: 2.5rem;
+    }
+    
+    .about-stats {
+        gap: 30px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    /* Home page about section mobile layout */
+    .about-container-home {
+        padding: 0;
+    }
+    
+    .about-flex-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about-text-column {
+        order: 1;
+    }
+    
+    .about-image-column {
+        order: 2;
+        width:100%;
+    }
+    
+    .about-single-photo {
+        position: static;
+    }
+    
+    /* Zeleny dom page mobile */
+    .zeleny-dom-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .zeleny-dom-text .about-title,
+    body:has([href*="zeleny-dom"]) .about-title,
+    .zeleny-dom-layout .about-title {
+        font-size: 1.5rem !important;
+        margin-bottom: 5px !important;
+    }
+    
+    /* Zeleny dom page mobile - make about-content wider */
+    .hero:not(.hero-main) + .about .zeleny-dom-layout .about-content,
+    .zeleny-dom-layout .about-content {
+        max-width: 90% !important;
+        width: 90% !important;
+        margin: 0 5% !important;
+        padding: 0 !important;
+    }
+    
+    .zeleny-dom-image-column {
+        order: 2;
+    }
+    
+    .zeleny-dom-text {
+        order: 1;
+    }
+    
+    .zeleny-dom-sticky {
+        position: static;
+    }
+    
+    .zeleny-dom-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

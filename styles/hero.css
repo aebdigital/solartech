@@ -1,0 +1,219 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #000;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-bg-image.active {
+    opacity: 0.7;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: -2px;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Subpage Hero Styles - Small Height */
+.hero:not(.hero-main) {
+    height: 20vh;
+    min-height: 200px;
+}
+
+.hero:not(.hero-main) .hero-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero:not(.hero-main) .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.hero:not(.hero-main) .hero-actions {
+    display: none;
+}
+
+.hero:not(.hero-main) .hero-content {
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.hero:not(.hero-main) .hero-text {
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Responsive Hero Styles */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh;
+        min-height: 500px;
+    }
+    
+    .hero:not(.hero-main) {
+        height: 15vh;
+        min-height: 120px;
+        padding-bottom: 20px;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: left;
+        padding: 0;
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+        min-height: auto;
+    }
+    
+    .hero:not(.hero-main) .hero-content {
+        justify-content: flex-end;
+        padding-bottom: 20px;
+    }
+    
+    .hero-text {
+        text-align: left;
+        align-self: flex-start;
+    }
+    
+    .hero:not(.hero-main) .hero-text {
+        text-align: left;
+        max-width: 100%;
+    }
+    
+    .hero-title {
+        font-size: 2.875rem;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    
+    .hero:not(.hero-main) .hero-title {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+    
+    .hero:not(.hero-main) .hero-content {
+        padding-top: 60px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    
+    .hero:not(.hero-main) .hero-subtitle {
+        font-size: 0.7rem;
+        text-align: left;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 80vh;
+        min-height: 400px;
+    }
+    
+    .hero:not(.hero-main) {
+        height: 20vh;
+        min-height: 150px;
+    }
+    
+    .hero-title {
+        font-size: 2.3rem;
+        letter-spacing: -1px;
+    }
+    
+    .hero:not(.hero-main) .hero-title {
+        font-size: 1.3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .hero:not(.hero-main) .hero-subtitle {
+        font-size: 0.75rem;
+    }
+}
