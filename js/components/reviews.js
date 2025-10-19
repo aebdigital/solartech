@@ -4,21 +4,21 @@ class Reviews {
         this.reviews = [
             {
                 rating: "★★★★★",
-                text: "Firmu hodnotím veľmi pozitívne a s jej službami som nadmieru spokojný. Určite sa na ňu v budúcnosti znova obrátim.",
-                author: "František",
-                location: "Trnava"
-            },
-            {
-                rating: "★★★★☆",
-                text: "S firmou som spolupracoval na väčšom projekte a veľmi oceňujem ich zmysel pre kvalitu a komplexnosť ponúkaných služieb.",
-                author: "Tomáš",
-                location: "Zvončín"
+                text: "SOLARTECH nám inštaloval fotovoltický systém na strechu rodinného domu. Profesionálny prístup od obhliadky až po konečné zapojenie. Solárne panely fungujú perfektne a úspora na elektrине je výrazná. Maximálna spokojnosť!",
+                author: "Ján Kováč",
+                location: "Košice"
             },
             {
                 rating: "★★★★★",
-                text: "Firma mi robila elektroinštaláciu v novopostavenom dome. Aj vďaka ich radám som upravila projekt a vôbec neľutujem, práve naopak. Som veľmi vďačná.",
-                author: "Veronika",
-                location: null
+                text: "Vynikajúca práca! Fotovoltaické panely boli nainštalované rýchlo a kvalitne. Oceňujem odbornú konzultáciu pri výbere vhodného systému a trpezlivé vysvetlenie všetkých detailov. Solárna energia sa nám veľmi oplatila.",
+                author: "Peter Novák",
+                location: "Prešov"
+            },
+            {
+                rating: "★★★★★",
+                text: "S firmou SOLARTECH sme absolútne spokojní. Inštalovali nám solárny systém s trojvalentným zásobníkom. Teplá voda je teraz zadarmo a v lete máme 100% pokrytie. Certifikovaní inštalatéri, ktorým môžete veriť!",
+                author: "Mária Horváthová",
+                location: "Michalovce"
             }
         ];
         this.init();
