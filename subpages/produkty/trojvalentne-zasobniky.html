@@ -9,9 +9,20 @@
     <link rel="stylesheet" href="../../styles/base.css">
     <link rel="stylesheet" href="../../styles/components/header.css">
     <link rel="stylesheet" href="../../styles/pages/home.css">
-    
+
     <link rel="stylesheet" href="../../styles/components/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            .zasobnik-layout {
+                flex-direction: column !important;
+            }
+            .zasobnik-image {
+                flex: 1 !important;
+                position: static !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
@@ -27,44 +38,49 @@
     </section>
 
     <section class="about">
-        <div class="container" style="max-width: 1000px;">
+        <div class="container" style="max-width: 1200px;">
             <div class="about-content">
                 <div class="about-image-section">
                     <img src="../../sources/produkty/zasobniky/40-5-250-200- (1).jpg" alt="Trojvalentné nerezové zásobníky" class="about-image" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 30px;">
                 </div>
-                <div class="about-text-section">
-                    <h2 class="about-title" style="font-size: 1.5rem;">Trojvalentné nerezové zásobníky</h2>
-                    <div class="about-text">
-                        <h3 style="color: #007bff; margin-top: 30px;">Zásobníky</h3>
-                        <ul>
-                            <li>vnútorná nádrž 1,5mm nerezová oceľ (SUS3042B)</li>
-                            <li>izolácia polyuretan</li>
-                            <li>vonkajší obal pozinkovaná oceľ</li>
-                            <li>tepelné špirály: 2x 15 metrov - TU2 medená trubica (d=12mm)</li>
-                            <li>elektrická špirála: 1500W</li>
-                            <li>tlakovaný 0,6Mpa, testovaný 1,2 Mpa</li>
-                        </ul>
+                <div class="zasobnik-layout" style="display: flex; gap: 40px; align-items: flex-start; margin-top: 30px;">
+                    <div class="about-text-section" style="flex: 1;">
+                        <h2 class="about-title" style="font-size: 1.5rem;">Trojvalentné nerezové zásobníky</h2>
+                        <div class="about-text">
+                            <h3 style="color: #007bff; margin-top: 30px;">Zásobníky</h3>
+                            <ul>
+                                <li>vnútorná nádrž 1,5mm nerezová oceľ (SUS3042B)</li>
+                                <li>izolácia polyuretan</li>
+                                <li>vonkajší obal pozinkovaná oceľ</li>
+                                <li>tepelné špirály: 2x 15 metrov - TU2 medená trubica (d=12mm)</li>
+                                <li>elektrická špirála: 1500W</li>
+                                <li>tlakovaný 0,6Mpa, testovaný 1,2 Mpa</li>
+                            </ul>
 
-                        <h3 style="color: #007bff; margin-top: 30px;">200l model HES200</h3>
-                        <p>570x1280mm<br>
-                        3/4", trojvalentný<br>
-                        <strong>obj.č. 9990200</strong></p>
+                            <h3 style="color: #007bff; margin-top: 30px;">200l model HES200</h3>
+                            <p>570x1280mm<br>
+                            3/4", trojvalentný<br>
+                            <strong>obj.č. 9990200</strong></p>
 
-                        <h3 style="color: #007bff; margin-top: 30px;">300l model HES300</h3>
-                        <p>570x1680mm<br>
-                        3/4", trojvalentný<br>
-                        <strong>obj.č. 9990300</strong></p>
+                            <h3 style="color: #007bff; margin-top: 30px;">300l model HES300</h3>
+                            <p>570x1680mm<br>
+                            3/4", trojvalentný<br>
+                            <strong>obj.č. 9990300</strong></p>
 
-                        <h3 style="color: #007bff; margin-top: 30px;">500l model HES500</h3>
-                        <p>670x1880mm<br>
-                        3/4", trojvalentný<br>
-                        <strong>obj.č. 9990500</strong></p>
+                            <h3 style="color: #007bff; margin-top: 30px;">500l model HES500</h3>
+                            <p>670x1880mm<br>
+                            3/4", trojvalentný<br>
+                            <strong>obj.č. 9990500</strong></p>
 
-                        <h3 style="color: #007bff; margin-top: 30px;">750l model HES750</h3>
-                        <p><strong>obj.č. 9990750</strong></p>
+                            <h3 style="color: #007bff; margin-top: 30px;">750l model HES750</h3>
+                            <p><strong>obj.č. 9990750</strong></p>
 
-                        <h3 style="color: #007bff; margin-top: 30px;">1000l model HES1000</h3>
-                        <p><strong>obj.č. 9991000</strong></p>
+                            <h3 style="color: #007bff; margin-top: 30px;">1000l model HES1000</h3>
+                            <p><strong>obj.č. 9991000</strong></p>
+                        </div>
+                    </div>
+                    <div class="zasobnik-image" style="flex: 0 0 400px;">
+                        <img src="../../sources/zasobnik/39.jpg" alt="Trojvalentný nerezový zásobník - detail" style="max-width: 100%; height: auto; border-radius: 8px; position: sticky; top: 100px;">
                     </div>
                 </div>
             </div>
