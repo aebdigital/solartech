@@ -76,14 +76,14 @@
 
 .stats-header-center {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 
 
 
 .ref-stats-section {
-    padding: 100px 0px;
+    padding: 100px 0 100px 0;
 }
 
 .ref-stats-container {

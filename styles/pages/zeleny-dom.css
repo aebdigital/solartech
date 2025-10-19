@@ -2,7 +2,7 @@
 
 /* About section for zeleny dom */
 .about {
-    padding: 60px 0 40px 0;
+    padding: 100px 0 100px 0;
     background: white;
 }
 
@@ -14,7 +14,7 @@
 
 .about-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .about-title {

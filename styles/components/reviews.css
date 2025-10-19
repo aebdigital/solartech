@@ -1,12 +1,12 @@
 /* Reviews Section Component */
 .reviews-section {
-    padding: 150px 0 100px 0;
+    padding: 100px 0 100px 0;
     background: #f8f9fa;
 }
 
 .reviews-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .reviews-title {
@@ -60,21 +60,7 @@
 }
 
 .review-rating {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 20px;
-    color: #ffc107;
-    font-size: 1.2rem;
-}
-
-.rating-score {
-    font-weight: 700;
-    color: #007bff;
-    font-size: 1.1rem;
-}
-
-.stars {
     color: #ffc107;
     font-size: 1.2rem;
 }
