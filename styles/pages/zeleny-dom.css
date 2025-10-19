@@ -7,9 +7,9 @@
 }
 
 .about-content {
-    max-width: 90vw;
+    width: 90vw;
     margin: 0 auto;
-    padding: 0 20px;
+
 }
 
 .about-header {
@@ -33,9 +33,9 @@
     margin: 0 auto;
 }
 
-/* Zeleny dom container */
+
 .zeleny-dom-container .about-content {
-    max-width: 90%;
+    
     width: 90%;
     margin: 0 5%;
     padding: 0;
@@ -144,6 +144,10 @@
         width: 90%;
         margin: 0 5%;
         padding: 0;
+    }
+
+    .container {
+        padding:0px;
     }
 
     .zeleny-dom-image-column {

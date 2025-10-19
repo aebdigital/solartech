@@ -9,7 +9,7 @@
 .about-content {
     max-width: 90vw;
     margin: 0 auto;
-    padding: 0 20px;
+    
 }
 
 .about-header {
@@ -63,7 +63,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    margin: 40px 0;
+  
 }
 
 .service-item {
