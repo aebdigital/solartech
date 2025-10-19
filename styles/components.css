@@ -5,17 +5,6 @@
     background: #f8f9fa;
 }
 
-.hero:not(.hero-main) ~ .reviews-section .container {
-    max-width: 100%;
-    padding: 0;
-}
-
-.hero:not(.hero-main) ~ .reviews-section .reviews-header,
-.hero:not(.hero-main) ~ .reviews-section .reviews-grid {
-    margin: 0 10%;
-    width: 80%;
-}
-
 .reviews-header {
     text-align: center;
     margin-bottom: 60px;
@@ -214,10 +203,10 @@
 
 /* Zeleny dom container override */
 .zeleny-dom-container .about-content {
-    max-width: 90% !important;
-    width: 90% !important;
-    margin: 0 5% !important;
-    padding: 0 !important;
+    max-width: 90%;
+    width: 90%;
+    margin: 0 5%;
+    padding: 0;
 }
 
 .about-content-home {
@@ -270,14 +259,6 @@
     margin-top: 20px;
 }
 
-/* Center button on sluzby page */
-.hero:not(.hero-main) + .about .about-btn {
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    margin: 30px auto 0 auto;
-    line-height: 1;
-}
 
 .about-single-photo {
     position: sticky;
@@ -325,11 +306,11 @@
 .zeleny-dom-btn {
     margin-top: 30px;
     text-align: left;
-    line-height: 1 !important;
-    display: flex !important;
+    line-height: 1;
+    display: flex;
     justify-content: flex-start;
-    margin-left: 0 !important;
-    margin-right: auto !important;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 /* Sluzby page services grid */
@@ -501,19 +482,17 @@
     }
     
     .zeleny-dom-text .about-title,
-    body:has([href*="zeleny-dom"]) .about-title,
     .zeleny-dom-layout .about-title {
-        font-size: 1.5rem !important;
-        margin-bottom: 5px !important;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
     }
-    
+
     /* Zeleny dom page mobile - make about-content wider */
-    .hero:not(.hero-main) + .about .zeleny-dom-layout .about-content,
     .zeleny-dom-layout .about-content {
-        max-width: 90% !important;
-        width: 90% !important;
-        margin: 0 5% !important;
-        padding: 0 !important;
+        max-width: 90%;
+        width: 90%;
+        margin: 0 5%;
+        padding: 0;
     }
     
     .zeleny-dom-image-column {

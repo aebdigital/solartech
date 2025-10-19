@@ -23,64 +23,6 @@ body {
     padding: 0 20px;
 }
 
-/* Full width container for all subpages to match hero sections */
-.hero:not(.hero-main) + .about .container,
-.hero:not(.hero-main) + section .container {
-    max-width: 100%;
-    padding: 0;
-}
-
-.hero:not(.hero-main) + .about .about-content,
-.hero:not(.hero-main) + section .about-content {
-    padding: 0;
-    max-width: none;
-    margin: auto;
-    width: 90%;
-}
-
-.hero:not(.hero-main) + .about .about-text-section,
-.hero:not(.hero-main) + section .about-text-section {
-    width: 100%;
-    max-width: none;
-    margin-left: 0;
-}
-
-/* Service page heading size reduction - exclude zeleny dom */
-.hero:not(.hero-main) + .about .about-title {
-    font-size: 1.25rem;
-}
-
-/* Override for zeleny dom page specifically */
-body:has([href*="zeleny-dom"]) .about-title,
-.zeleny-dom-layout .about-title {
-    font-size: 3.5rem !important;
-}
-
-/* Service list styling for service pages - 2 columns */
-.hero:not(.hero-main) + .about ul {
-    list-style: disc;
-    padding-left: 20px;
-    margin: 0;
-    columns: 2;
-    column-gap: 40px;
-    column-fill: balance;
-    text-align: left;
-}
-
-.hero:not(.hero-main) + .about li {
-    margin-bottom: 8px;
-    font-size: 1rem;
-    line-height: 1.5;
-    break-inside: avoid;
-    page-break-inside: avoid;
-    text-align: left;
-}
-
-@media (max-width: 768px) {
-    .hero:not(.hero-main) + .about ul {
-        columns: 1;
-    }
-}
 
 /* Common Button Styles */
 .cta-btn {

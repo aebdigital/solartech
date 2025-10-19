@@ -242,22 +242,6 @@
     }
 }
 
-/* Subpage adjustments */
-.hero:not(.hero-main) + .certificates-section {
-    padding-top: 100px;
-}
-
-.hero:not(.hero-main) + .certificates-section .container {
-    max-width: 100%;
-    padding: 0;
-}
-
-.hero:not(.hero-main) + .certificates-section .certificates-gallery {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-}
-
 /* Responsive Design */
 @media (max-width: 1200px) {
     .certificates-gallery {
@@ -270,25 +254,15 @@
     .certificates-section, .certification-info-section {
         padding: 80px 0 60px 0;
     }
-    
-    .hero:not(.hero-main) + .certificates-section {
-        padding-top: 60px;
-    }
-    
+
     .certification-title {
         font-size: 2rem;
     }
-    
+
     .certificates-gallery {
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 0 15px;
-    }
-    
-    .hero:not(.hero-main) + .certificates-section .certificates-gallery {
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 90%;
     }
     
     .certificate-image {

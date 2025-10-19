@@ -56,7 +56,7 @@
 }
 
 .navbar.scrolled .nav-logo .logo-image {
-    height: 50px !important;
+    height: 50px;
 }
 
 /* Logo Text Styling */
@@ -257,7 +257,7 @@
     }
     
     .navbar.scrolled .nav-logo .logo-image {
-        height: 40px !important;
+        height: 40px;
     }
 }
 
