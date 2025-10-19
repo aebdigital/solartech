@@ -217,3 +217,170 @@
         font-size: 0.75rem;
     }
 }
+
+/* Home Page About Section */
+.about {
+    padding: 60px 0 40px 0;
+    background: white;
+}
+
+.about-container-home {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.about-content-home {
+    width: 100%;
+    padding: 0;
+}
+
+.about-section-home {
+    width: 100%;
+}
+
+.about-text-section {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+}
+
+.about-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-flex-layout {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.about-text-column {
+    flex: 2;
+}
+
+.about-image-column {
+    flex: 1;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-item-left {
+    text-align: left;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007bff;
+    display: block;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: 2px solid #333;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.about-btn:hover {
+    background: #333;
+    color: white;
+}
+
+.about-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.about-btn:hover svg {
+    transform: translate(5px, -5px);
+}
+
+.about-btn-home {
+    margin-top: 20px;
+}
+
+.about-single-photo {
+    position: sticky;
+    top: 100px;
+}
+
+.about-image-home {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Home Page Responsive */
+@media (max-width: 768px) {
+    .about {
+        padding: 80px 0 60px 0;
+    }
+
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .about-container-home {
+        padding: 0;
+    }
+
+    .about-flex-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-text-column {
+        order: 1;
+    }
+
+    .about-image-column {
+        order: 2;
+        width: 100%;
+    }
+
+    .about-single-photo {
+        position: static;
+    }
+
+    .about-stats {
+        gap: 30px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}

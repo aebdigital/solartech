@@ -23,7 +23,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    padding:0px 10px;
+
     justify-content: center;
 }
 
@@ -208,8 +208,8 @@
 
     .contact-section .container {
         padding: 0;
-        max-width: 100%;
-        width: 100%;
+       
+        width: 90%;
     }
 
     .contact-info-grid {

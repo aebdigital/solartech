@@ -1,0 +1,125 @@
+/* Reviews Section Component */
+.reviews-section {
+    padding: 150px 0 100px 0;
+    background: #f8f9fa;
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reviews-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.reviews-title[data-text]::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    line-height: 0.8;
+    margin-top: -20px;
+}
+
+.reviews-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.review-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.review-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.rating-score {
+    font-weight: 700;
+    color: #007bff;
+    font-size: 1.1rem;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.review-text {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.review-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.author-name {
+    font-weight: 600;
+    color: #333;
+}
+
+.author-location {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsive Reviews */
+@media (max-width: 768px) {
+    .reviews-section {
+        padding: 80px 0 60px 0;
+    }
+
+    .reviews-title {
+        font-size: 1.5rem;
+    }
+
+    .reviews-title[data-text]::before {
+        font-size: 2.5rem;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 90%;
+    }
+}

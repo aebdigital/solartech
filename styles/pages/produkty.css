@@ -231,6 +231,10 @@
         display: block;
     }
 
+    .container {
+        width: 90%;
+    }
+
     .filter-dropdown {
         display: flex;
         justify-content: center;
