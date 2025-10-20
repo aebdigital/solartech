@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://solartech.sk/sitemap.xml
+
+# Disallow specific paths (if any)
+Disallow: /js/
+Disallow: /styles/
+Disallow: /.git/
+Disallow: /node_modules/
